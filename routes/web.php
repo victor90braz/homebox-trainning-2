@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Models\User;
 
 Route::get('/', [\App\Http\Controllers\PostController::class, 'index']);
-
 Route::get('posts/{post:slug}', [\App\Http\Controllers\PostController::class, 'show']);
 
 Route::get('categories/{category:slug}', function (Category $category) {
